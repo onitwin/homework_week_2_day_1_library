@@ -1,6 +1,7 @@
 class Library
 
-  attr_accessor:books
+  attr_accessor :books
+
 
   def initialize (books)
     @books=books
@@ -9,9 +10,15 @@ class Library
 
   #getters
 
-  def get_all_books()
-
+  def get_any_book(book_to_check)
+    for i in @books
+      if i[:title] ==book_to_check
+        return book_to_check
+      end
+    end
+    
   end
+
 
 
 

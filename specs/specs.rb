@@ -14,6 +14,9 @@ def test_get_all_books
   assert_equal("Michelle",@library.books[1][:rental_details][:student_name])
 end
 
+def test_get_any_book
+  assert_equal("The Hobbit", @library.books[1][:title])
+end
 
 
 
